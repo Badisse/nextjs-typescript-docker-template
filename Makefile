@@ -27,8 +27,12 @@ build:
 start:
 	$(DC) up
 
+# Install node package with argument PACKAGE
+yarn-install:
+	$(DCE) $(IMAGE) yarn install
+
 # Start nextjs dev
-nextjs-dev:
+dev:
 	$(DCE) $(IMAGE) yarn dev
 
 # Stop and remove containers

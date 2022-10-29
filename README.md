@@ -46,6 +46,12 @@ make build
 
 # Run the container
 make start
+
+# Install dependencies
+make yarn-install
+
+# Run dev server
+make dev
 ```
 
 
